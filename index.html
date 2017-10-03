@@ -1,28 +1,113 @@
 ---
 layout: default
+tags: about
 ---
-{% assign posts_count = paginator.posts | size %}
-
-<div class="home">
-  {% if posts_count > 0 %}
-    <div class="posts">
-      {% for post in paginator.posts %}
-        <div class="post py3">
-          <p class="post-meta">{{ post.date | date: site.date_format }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-          <span class="post-summary">
-            {% if post.summary %}
-              {{ post.summary }}
-            {% else %}
-              {{ post.excerpt }}
-            {% endif %}
-          </span>
-        </div>
-      {% endfor %}
-    </div>
-
-    {% include pagination.html %}
-  {% else %}
-    <h1 class='center'>{{ site.text.index.coming_soon }}</h1>
-  {% endif %}
+<img src="images/me.png" alt="Shankar Venkitachalam" width="240" style="float: right; margin: 20px; margin-left: 20px; border-radius: 50%; border: 1px solid lightgray;" />
+<div class="bio" style="text-align:justify">
+   <p>I am a first year M.S. student majoring in Computer Science at the University of Massachusetts Amherst. </p>
+   <p>Before joining UMass, I worked as a machine learning engineer in the Multimedia Research Group at 
+      <a href="http://www.snapdeal.com" class="uline">Snapdeal</a>, Bangalore. Previously, I worked as a software developer at Adobe Systems India on 
+      <a href="http://www.adobe.com/products/captivateprime.html" class="uline">Adobe Captivate Prime</a>, a newly-launched SaaS-based Learning Management System for enterprise. I received my Bachelor's in Computer Science from 
+      <a href="http://www.nitc.ac.in/" class="uline">National Institute of Technology Calicut</a> in July 2012. 
+   </p>
+   <p>I am actively looking for a summer internship in the areas of Natural Language Processing and Machine Learning. You can have a look at my resume 
+      <a href="resume/resume.pdf" class="uline">here</a>. 
+   </p>
+</div>
+<hr/>
+<div class="experience">
+   <h1>Experience</h1>
+   <br/>
+   <table width="100%" align="center" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+      <tbody>
+         <tr>
+            <td width="25%">
+               <div class="one">
+                  <div class="two" style="opacity: 0;"></div>
+                  <a href="http://www.snapdeal.com/">
+                  <img src="images/snapdeal.png" style="width:75%;">
+                  </a>
+               </div>
+            </td>
+            <td valign="top" width="75%">
+               <p>Senior Software Engineer<br>
+               Snapdeal<br>
+               Dec '15 - Mar '17</p>
+               <p>Developed machine learning systems for natural language processing and computer vision.</p>
+            </td>
+         </tr>
+         <tr>
+            <td width="25%">
+               <div class="one">
+                  <div class="two" style="opacity: 0;"></div>
+                  <a href="http://www.adobe.com/">
+                  <img src="images/adobe.png" style="width:75%;">
+                  </a>
+               </div>
+            </td>
+            <td valign="top" width="75%">
+               <p>Member of Technical Staff II<br>
+               Adobe Systems<br>
+               Aug '13 - Nov '15</p>
+               <p>Implemented the server side modules for 
+                  <a href="http://www.adobe.com/products/captivateprime.html" class="uline">Adobe Captivate Prime</a>, a newly launched Learning Management System for enterprise.
+               </p>
+            </td>
+         </tr>
+         <tr>
+            <td width="25%">
+               <div class="one">
+                  <div class="two" style="opacity: 0;"></div>
+                  <a href="http://www.tejasnetworks.com/">
+                  <img src="images/tejas.jpg" style="width:75%;">
+                  </a>
+               </div>
+            </td>
+            <td valign="top" width="75%">
+               <p>R&amp;D Engineer<br>
+               Tejas Networks<br>
+               Aug '12 - Aug '13</p>
+               <p>Implemented MPLS-TP protocol on high capacity ethernet and optical networking switches.
+               </p>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+<hr/>
+<div class="experience">
+   <h1>Education</h1>
+   <br/>
+   <table width="100%" align="center" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
+      <tbody>
+         <tr>
+            <td width="25%">
+               <div class="one">
+                  <div class="two" style="opacity: 0;"></div>
+                  <a href="http://www.umass.edu/"><img src="images/umass.png" style="width:75%;"></a>
+               </div>
+            </td>
+            <td valign="top" width="75%">
+               <p>University of Massachusetts Amherst<br>
+               Master of Science (MS), Computer Science<br>
+               Sep '17 - May '19 (Expected)</p>
+               <p>Relevant Coursework: Advanced Machine Learning, Natural Language Processing, Neural Networks</p>
+            </td>
+         </tr>
+         <tr>
+            <td width="25%">
+               <div class="one">
+                  <div class="two" style="opacity: 0;"></div>
+                  <a href="http://www.nitc.ac.in/"><img src="images/nitc.png" style="width:75%;"></a>
+               </div>
+            </td>
+            <td valign="top" width="75%">
+               <p>National Institute of Technology Calicut<br>
+               Bachelor of Technology (B.Tech), Computer Science and Engineering<br>
+               Jul '08 - Jul '12</p>
+               <p>Relevant Coursework: Image Processing, Data Structures and Algorithms, Advanced Topics in Algorithms, Computational Intelligence</p>
+            </td>
+         </tr>
+      </tbody>
+   </table>
 </div>
