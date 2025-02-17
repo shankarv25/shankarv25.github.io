@@ -9,6 +9,12 @@
     {% if site.github_username %}
       <a class="fa fa-github" href="https://github.com/{{ site.github_username }}"></a>
     {% endif %}
+    {% if site.scholar_user_id %}
+      <a class="fa-brands fa-google-scholar" href="https://scholar.google.com/citations?user={{ site.scholar_user_id }}"></a>
+    {% endif %}
+    {% if site.justia_user_name %}
+      <a class="fa fa-legal" href="https://patents.justia.com/inventor/{{ site.justia_user_name }}"></a>
+    {% endif %}
     {% if site.reddit_username %}
     <a class="fa fa-reddit" href="https://reddit.com/user/{{ site.reddit_username }}"></a>
     {% endif %}
